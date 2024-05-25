@@ -1,10 +1,11 @@
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
-    background-image: url('fundo.png');
     background-color: #f5f5f5;
     color: #333;
     transition: background-color 0.3s, color 0.3s;
+    background-size: auto;
+    background-position: center;
 }
 
 header {
