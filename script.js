@@ -24,6 +24,16 @@ document.addEventListener('DOMContentLoaded', () => {
     const restoreButton = document.getElementById('restoreButton'); // Adicionado botão de restaurar
     const downloadRankingButton = document.getElementById('downloadRankingButton');
     const siteButton = document.getElementById('siteButton'); // Botão para o site
+
+    // Função para carregar uma imagem de fundo aleatória
+    function setRandomBackground() {
+        const images = ['imagens/fundo1.jpg', 'imagens/fundo2.jpg', 'imagens/fundo3.jpg', 'imagens/fundo4.jpg', 'imagens/fundo5.jpg', 'imagens/fundo6.jpg', 'imagens/fundo1.png',]; // Adicione os nomes das suas imagens aqui
+        const randomImage = images[Math.floor(Math.random() * images.length)];
+        document.body.style.backgroundImage = `url(${randomImage})`;
+    }
+
+    setRandomBackground();
+
     downloadRankingButton.addEventListener('click', () => {
         downloadRanking();
     });
