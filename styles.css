@@ -5,7 +5,7 @@ body {
     color: #333;
     transition: background-color 0.3s, color 0.3s;
     background-size: auto;
-    background-position: center;
+    background-position: right;
 }
 
 header {
