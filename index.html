@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>RANKING - LISTA0470</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header> 
+        <img id="logo" src="logo.png" alt="Logo">
+        <button id="menuButton">MENU</button>
+        <div id="menuDropdown" class="dropdown-content">
+            <button id="sortRaceButton">Sortear corridas</button>
+            <button id="round135Button">Rodadas: 1, 3, 5</button>
+            <button id="round246Button">Rodadas: 2, 4, 6</button>
+            <button id="downloadRankingButton">Exportar ranking (.txt)</button>
+            <button id="siteButton" class="menu-item">Tchais (teste)</button>
+            <button id="restoreButton">Download from Database</button> 
+        </div>
+    </header>
+    <main>
+        <input type="text" id="nameInput" placeholder="Adicionar nome">
+        <div id="buttons">
+            <button id="darkModeButton">Modo Noturno</button>
+            <button id="clearButton">Limpar Ranking</button>
+            <button id="addButton">Adicionar</button>
+        </div>
+        <ul id="rankingList"></ul>
+    </main>
+    <div id="raceModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeRaceModal">&times;</span>
+            <h2>Corridas Sorteadas</h2>
+            <ul id="raceList" class="center-text"></ul>
+        </div>
+    </div>
+    <div id="confirmRemoveModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeRemoveModal">&times;</span>
+            <h2>Confirmar Remoção</h2>
+            <p id="removeName"></p>
+            <button id="cancelRemoveButton" style="background-color: #333333; color: white;">Não</button>
+            <button id="confirmRemoveButton" style="background-color: #dc3545; color: white;">Sim</button>
+        </div>
+    </div>
+    <div id="round135Modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeRound135Modal">&times;</span>
+            <h2>Rodada: 1, 3, 5</h2>
+            <h3>Válido somente com print.</h3>
+            <ul id="round135List" class="center-text"></ul>
+        </div>
+    </div>
+    <div id="round246Modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeRound246Modal">&times;</span>
+            <h2>Rodada: 2, 4, 6</h2>
+            <h3>Válido somente com print.</h3>
+            <ul id="round246List" class="center-text"></ul>
+        </div>
+    </div>
+    <footer>
+        ©Lista0470™ - todos os direitos reservados.
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
