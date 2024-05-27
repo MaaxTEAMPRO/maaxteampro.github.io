@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Função para carregar uma imagem de fundo aleatória
     function setRandomBackground() {
-        const images = ['fundo1.png', 'fundo2.png', 'fundo3.jpg', 'fundo4.jpg',]; // Adicione os nomes das suas imagens aqui
+        const images = ['imagens/fundo1.png', 'imagens/fundo2.png', 'imagens/fundo3.jpg', 'imagens/fundo4.jpg',]; // Adicione os nomes das suas imagens aqui
         const randomImage = images[Math.floor(Math.random() * images.length)];
         document.body.style.backgroundImage = `url(${randomImage})`;
     }
