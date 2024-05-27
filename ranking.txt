@@ -10,4 +10,3 @@ Julierme "charger20"
 Wesley "Malibu"
 Felipe "mustang03"
 Kaua "buick"
-piloto teste
