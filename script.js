@@ -27,12 +27,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Função para carregar uma imagem de fundo aleatória
     function setRandomBackground() {
+        console.log("Chamada para carregar background.");
         const images = ['imagens/fundo1.png', 'imagens/fundo2.png', 'imagens/fundo3.jpg', 'imagens/fundo4.jpg',]; // Adicione os nomes das suas imagens aqui
         const randomImage = images[Math.floor(Math.random() * images.length)];
         document.body.style.backgroundImage = `url(${randomImage})`;
     }
 
     setRandomBackground();
+        console.log("Chamada para randomizar background.");
 
     downloadRankingButton.addEventListener('click', () => {
         downloadRanking();
@@ -40,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Função para salvar o ranking no localStorage
     function saveRanking() {
+        console.log("chamada de função para salvar ranking no localstorage.");
         const names = [];
         rankingList.querySelectorAll('li').forEach((li, index) => {
             const position = index + 1;
@@ -50,6 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     // Função para fazer o download do ranking diretamente do localStorage
     function downloadRanking() {
+        console.log("chamada de função para fazer download .txt do ranking salvo no localstorage.");
         const date = new Date();
         const formattedDate = `${date.getDate()}${(date.getMonth() + 1).toString().padStart(2, '0')}${date.getFullYear()}_${date.getHours()}${date.getMinutes()}`;
         const filename = `ranking0470_${formattedDate}.txt`;
@@ -66,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Função para carregar o ranking do localStorage
     function loadRanking() {
+        console.log("chamada de função para atualizar o ranking do localstorage.");
         const savedNames = JSON.parse(localStorage.getItem('ranking')) || [];
         savedNames.forEach(item => {
             const li = document.createElement('li');
@@ -90,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
     nameInput.addEventListener('keyup', (event) => {
         if (event.key === 'Enter') {
             addName();
+            console.log("chamada de função para salvar nome no ranking.");
         }
     });
 
@@ -133,6 +139,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Adicionar evento de clique para remover piloto ao clicar no nome
         li.addEventListener('click', () => {
+            console.log("chamada de função para remover nome ao clicar.");
             const name = li.dataset.name;
             document.getElementById('removeName').textContent = name;
             confirmRemoveModal.style.display = 'block';
@@ -195,6 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         // Função para alternar entre modo claro e modo noturno
         function toggleDarkMode() {
+            console.log("chamada de função para alterar entre modo claro e modo noturno.");
             document.body.classList.toggle('dark-mode');
             localStorage.setItem('dark-mode', document.body.classList.contains('dark-mode'));
         }
@@ -212,6 +220,8 @@ document.addEventListener('DOMContentLoaded', () => {
     
         // Função para limpar o ranking
         function clearRanking() {
+            alert('O RANKING FOI RESETADO.');
+            console.log("chamada de função para limpar o ranking.");
             rankingList.innerHTML = '';
             localStorage.removeItem('ranking');
         }
@@ -236,6 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         // Função para sortear corridas
         sortRaceButton.addEventListener('click', () => {
+            console.log("chamada de função para sortear corridas.");
             const items = [...rankingList.querySelectorAll('li')];
             if (items.length < 2) {
                 alert('Você precisa de pelo menos dois pilotos na lista para sortear corridas.');
@@ -288,6 +299,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
         // Confirmar remoção de piloto
         confirmRemoveButton.addEventListener('click', () => {
+            console.log("chamada de função para confirmar piloto a ser removido.");
             const name = document.getElementById('removeName').textContent;
             const liToRemove = [...rankingList.querySelectorAll('li')].find(li => li.dataset.name === name);
             rankingList.removeChild(liToRemove);
@@ -400,6 +412,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
             // Adicionando evento de clique para o botão do site no menu
             siteButton.addEventListener('click', () => {
+                alert("NÃO CLIQUE EM OK");
                 window.location.href = 'https://www.youtube.com/watch?v=jWvb60LYkcU'; // Substitua pela URL do seu site
             });
         });
