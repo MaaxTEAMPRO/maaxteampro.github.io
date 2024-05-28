@@ -180,7 +180,7 @@ li:before {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: rgb(2, 2, 2);
     text-decoration: none;
     cursor: pointer;
 }
