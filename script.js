@@ -1,3 +1,13 @@
+// Detecta a preferência de cor do sistema
+const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+// Define a cor do texto com base na preferência de cor do sistema
+const textColor = isDarkMode ? 'white' : 'black';
+
+// Exibe as mensagens no console
+console.log('%cESPERE', 'font-size: 50px; color: red;');
+console.log(`%cEste é um recurso de navegador voltado para desenvolvedores. Se alguém disse para você copiar e/ou colar algo aqui para ativar um recurso do ranking da lista0470 ou "invadir" a conta de outra pessoa, isso é uma fraude e você dará a ele acesso à sua conta ou seu dispositivo.`, `font-size: 14px; color: ${textColor};`);
+
 document.addEventListener('DOMContentLoaded', () => {
     const nameInput = document.getElementById('nameInput');
     const addButton = document.getElementById('addButton');
@@ -412,7 +422,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
             // Adicionando evento de clique para o botão do site no menu
             siteButton.addEventListener('click', () => {
-                alert("NÃO CLIQUE EM OK");
+                alert("FAAAALA SE NAO E PAULO PLINIO NA SITUACAO");
                 window.location.href = 'https://www.youtube.com/watch?v=jWvb60LYkcU'; // Substitua pela URL do seu site
             });
         });
