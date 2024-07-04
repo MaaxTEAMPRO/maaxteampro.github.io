@@ -20,12 +20,12 @@ Thank you for helping to keep our project secure for all users!
 
 Se você encontrar uma vulnerabilidade de segurança em nosso site, siga os passos abaixo para relatar:
 
-1 - Vá para a aba "Issues" do nosso repositório no GitHub.
-2 - Crie uma nova "Issue" e selecione o template de "Relatório de Vulnerabilidade de Segurança".
-3 - Preencha o template com a descrição completa da vulnerabilidade, incluindo os passos necessários para reproduzi-la.
-4 - Nossa equipe de segurança revisará o relatório e fornecerá um reconhecimento de recebimento o mais rápido possível.
-5 - Investigaremos a vulnerabilidade e informaremos sobre o andamento da correção o mais rápido possível.
-6 - Se a vulnerabilidade for confirmada, trabalharemos para lançar uma atualização de segurança o mais rápido possível. Você será notificado quando a correção estiver disponível.
+1. Vá para a aba "Issues" do nosso repositório no GitHub.
+2. Crie uma nova "Issue" e selecione o template de "Relatório de Vulnerabilidade de Segurança".
+3. Preencha o template com a descrição completa da vulnerabilidade, incluindo os passos necessários para reproduzi-la.
+4. Nossa equipe de segurança revisará o relatório e fornecerá um reconhecimento de recebimento o mais rápido possível.
+5. Investigaremos a vulnerabilidade e informaremos sobre o andamento da correção o mais rápido possível.
+6. Se a vulnerabilidade for confirmada, trabalharemos para lançar uma atualização de segurança o mais rápido possível. Você será notificado quando a correção estiver disponível.
 
 ## Agradecemos e valorizamos a ajuda da comunidade para manter nosso projeto seguro e funcional.
 Obrigado por ajudar a manter nosso projeto seguro para todos os usuários!
