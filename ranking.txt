@@ -1,15 +1,13 @@
 Julierme  Mustang GT
-Felipe  Mustang Foxbody
-Lucas  Plymouth Superbird
-Igor  Dodge Viper
-Gabriel  Chevelle
-David  Dodge Dart
-G CorrÃªa  Camaro
-Ramon  Nomad
-Marcos Valini  Honda Civic
-Elias  Mustang Cobra
-Renato  The Crow
-Felipe O  Ford Ranchero
 JM  Nova
-Pedro  Chevrolet S
+Lucas  Plymouth Superbird
+Marcos Valini  Honda Civic
+Felipe  Mustang Foxbody
 Maax  Supra MK
+Igor  Dodge Viper
+Antony "Corvette C7"
+Ramon  Nomad
+G CorrÃªa  Camaro
+Gabriel  Chevelle
+Felipe O  Ford Ranchero
+Elias "Mustang 3Gen"
